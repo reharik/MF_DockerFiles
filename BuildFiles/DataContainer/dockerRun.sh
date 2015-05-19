@@ -1,2 +1,2 @@
 #!/bin/bash          
-docker create --name datacontainer datacontainer_image /bin/true
+docker run --name datacontainer datacontainer_image /bin/true

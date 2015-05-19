@@ -1,3 +1,3 @@
 #!/bin/bash          
-cd ../../../MethodFItness_Api
+cd ../../../MethodFitness_Api
 docker build .

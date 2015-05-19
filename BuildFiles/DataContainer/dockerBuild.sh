@@ -1,2 +1,2 @@
 #!/bin/bash          
-docker build --name datacontainer_image .
+docker build -t datacontainer_image .
