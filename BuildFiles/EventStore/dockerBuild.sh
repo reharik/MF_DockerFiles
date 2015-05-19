@@ -1,2 +1,2 @@
 #!/bin/bash          
-docker build --name eventstore_image .
+docker build -t eventstore_image .
