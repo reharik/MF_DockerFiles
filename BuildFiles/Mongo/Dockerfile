@@ -32,7 +32,7 @@ RUN set -x \
 	&& rm -rf /var/lib/mongodb \
 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
 
-RUN chown -R mongodb:mongodb /data/mongo/db
+RUN mkdir -p /data/mongo/db && chown -R mongodb:mongodb /data/mongo/db
 
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
