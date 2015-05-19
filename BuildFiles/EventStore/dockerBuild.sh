@@ -1,2 +1,2 @@
 #!/bin/bash          
-docker build --name datacontainer_image .
+docker build --name eventstore_image .
