@@ -1,2 +1,2 @@
 #!/bin/bash          
-docker build --name mongo_image .
+docker build --t mongo_image .
