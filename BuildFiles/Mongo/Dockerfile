@@ -8,5 +8,5 @@ RUN apt-get update && apt-get install -y mongodb-org
 
 EXPOSE 27017
 
-ENTRYPOINT ["/usr/bin/mongod", "--dbpath", "/data/mongo/db"]
+CMD ["/usr/bin/mongod", "--dbpath", "/data/mongo/db"]
 

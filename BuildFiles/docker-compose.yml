@@ -1,17 +1,17 @@
 datacontainer:
-  build: /datacontainer
-CDN:
-  build: /CDN
+  build: DataContainer
+cdn:
+  build: CDN
 mongo:
-  build: /mongo
+  build: Mongo
   volumes_from:
-	- datacontainer
+    - datacontainer
   ports:
-    - "27017:27017"
+    - 27017:27017
 eventstore:
-  build: /eventstore
+  build: EventStore
   volumes_from:
-	- datacontainer
+    - datacontainer
   ports:
-    - "2113:2113"
-    - "1113:1113"
+    - 2113:2113
+    - 1113:1113
